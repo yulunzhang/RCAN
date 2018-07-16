@@ -1,0 +1,60 @@
+**********************
+Method_1: RCAN; Set: Set5
+x2 1 baby_RCAN_x2.png: PSNR= 38.979958 SSIM= 0.968184
+x2 2 bird_RCAN_x2.png: PSNR= 43.639850 SSIM= 0.990903
+x2 3 butterfly_RCAN_x2.png: PSNR= 36.058756 SSIM= 0.980312
+x2 4 head_RCAN_x2.png: PSNR= 36.075233 SSIM= 0.892380
+x2 5 woman_RCAN_x2.png: PSNR= 36.617042 SSIM= 0.975444
+--------Mean--------
+x2: PSNR= 38.274168 SSIM= 0.961445
+x3 1 baby_RCAN_x3.png: PSNR= 35.803059 SSIM= 0.931255
+x3 2 bird_RCAN_x3.png: PSNR= 38.794508 SSIM= 0.974730
+x3 3 butterfly_RCAN_x3.png: PSNR= 31.812360 SSIM= 0.956393
+x3 4 head_RCAN_x3.png: PSNR= 34.238129 SSIM= 0.839170
+x3 5 woman_RCAN_x3.png: PSNR= 33.062721 SSIM= 0.947882
+--------Mean--------
+x3: PSNR= 34.742155 SSIM= 0.929886
+x4 1 baby_RCAN_x4.png: PSNR= 33.948246 SSIM= 0.896239
+x4 2 bird_RCAN_x4.png: PSNR= 35.904838 SSIM= 0.951746
+x4 3 butterfly_RCAN_x4.png: PSNR= 29.359312 SSIM= 0.934269
+x4 4 head_RCAN_x4.png: PSNR= 33.010323 SSIM= 0.799064
+x4 5 woman_RCAN_x4.png: PSNR= 30.945093 SSIM= 0.919886
+--------Mean--------
+x4: PSNR= 32.633562 SSIM= 0.900241
+x8 1 baby_RCAN_x8.png: PSNR= 29.349339 SSIM= 0.785561
+x8 2 bird_RCAN_x8.png: PSNR= 28.349255 SSIM= 0.818828
+x8 3 butterfly_RCAN_x8.png: PSNR= 22.805033 SSIM= 0.815880
+x8 4 head_RCAN_x8.png: PSNR= 30.414751 SSIM= 0.707090
+x8 5 woman_RCAN_x8.png: PSNR= 25.621547 SSIM= 0.811486
+--------Mean--------
+x8: PSNR= 27.307985 SSIM= 0.787769
+**********************
+Method_2: RCANplus; Set: Set5
+x2 1 baby_RCANplus_x2.png: PSNR= 38.990887 SSIM= 0.968258
+x2 2 bird_RCANplus_x2.png: PSNR= 43.683419 SSIM= 0.991057
+x2 3 butterfly_RCANplus_x2.png: PSNR= 36.240703 SSIM= 0.980790
+x2 4 head_RCANplus_x2.png: PSNR= 36.099898 SSIM= 0.892655
+x2 5 woman_RCANplus_x2.png: PSNR= 36.644583 SSIM= 0.975597
+--------Mean--------
+x2: PSNR= 38.331898 SSIM= 0.961671
+x3 1 baby_RCANplus_x3.png: PSNR= 35.815902 SSIM= 0.931307
+x3 2 bird_RCANplus_x3.png: PSNR= 38.976440 SSIM= 0.975613
+x3 3 butterfly_RCANplus_x3.png: PSNR= 32.019611 SSIM= 0.957724
+x3 4 head_RCANplus_x3.png: PSNR= 34.256163 SSIM= 0.839550
+x3 5 woman_RCANplus_x3.png: PSNR= 33.195626 SSIM= 0.948542
+--------Mean--------
+x3: PSNR= 34.852748 SSIM= 0.930547
+x4 1 baby_RCANplus_x4.png: PSNR= 33.975548 SSIM= 0.896608
+x4 2 bird_RCANplus_x4.png: PSNR= 36.024353 SSIM= 0.952665
+x4 3 butterfly_RCANplus_x4.png: PSNR= 29.520410 SSIM= 0.935730
+x4 4 head_RCANplus_x4.png: PSNR= 33.051665 SSIM= 0.800068
+x4 5 woman_RCANplus_x4.png: PSNR= 31.088076 SSIM= 0.921541
+--------Mean--------
+x4: PSNR= 32.732010 SSIM= 0.901322
+x8 1 baby_RCANplus_x8.png: PSNR= 29.491044 SSIM= 0.788043
+x8 2 bird_RCANplus_x8.png: PSNR= 28.562146 SSIM= 0.821694
+x8 3 butterfly_RCANplus_x8.png: PSNR= 23.113499 SSIM= 0.824181
+x8 4 head_RCANplus_x8.png: PSNR= 30.448698 SSIM= 0.708139
+x8 5 woman_RCANplus_x8.png: PSNR= 25.717459 SSIM= 0.814196
+--------Mean--------
+x8: PSNR= 27.466569 SSIM= 0.791251
