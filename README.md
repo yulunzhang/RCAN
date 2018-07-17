@@ -37,7 +37,7 @@ For more informaiton, please refer to [EDSR(PyTorch)](https://github.com/thstkdg
 
 1. (optional) Download models for our paper and place them in '/RCAN_TrainCode/experiment/model'.
 
-    All the models can be downloaded from [Dropbox](https://www.dropbox.com/s/mjbcqkd4nwhr6nu/models_ECCV2018RCAN.zip?dl=0). Models for BD degradation model will be updated soon.
+    All the models (BIX2/3/4/8, BDX3) can be downloaded from [Dropbox](https://www.dropbox.com/s/qm9vc0p0w9i4s0n/models_ECCV2018RCAN.zip?dl=0).
 
 2. Cd to 'RCAN_TrainCode/code', run the following scripts to train models.
 
@@ -56,6 +56,10 @@ For more informaiton, please refer to [EDSR(PyTorch)](https://github.com/thstkdg
 
     # RCAN_BIX8_G10R20P48, input=48x48, output=384x384
     python main.py --model RCAN --save RCAN_BIX8_G10R20P48 --scale 8 --n_resgroups 10 --n_resblocks 20 --n_feats 64  --reset --chop --save_results --print_model --patch_size 384 --pre_train ../experiment/model/RCAN_BIX2.pt
+    
+    # RCAN_BDX3_G10R20P48, input=48x48, output=144x144
+    # specify '--dir_data' to the path of BD training data
+    python main.py --model RCAN --save RCAN_BIX3_G10R20P48 --scale 3 --n_resgroups 10 --n_resblocks 20 --n_feats 64  --reset --chop --save_results --print_model --patch_size 144 --pre_train ../experiment/model/RCAN_BIX2.pt
 
     ```
 
@@ -63,7 +67,7 @@ For more informaiton, please refer to [EDSR(PyTorch)](https://github.com/thstkdg
 ### Quick start
 1. Download models for our paper and place them in '/RCAN_TestCode/model'.
 
-    All the models can be downloaded from [Dropbox](https://www.dropbox.com/s/mjbcqkd4nwhr6nu/models_ECCV2018RCAN.zip?dl=0). Models for BD degradation model will be updated soon.
+    All the models (BIX2/3/4/8, BDX3) can be downloaded from [Dropbox](https://www.dropbox.com/s/qm9vc0p0w9i4s0n/models_ECCV2018RCAN.zip?dl=0).
 
 2. Cd to '/RCAN_TestCode/code', run the following scripts.
 
@@ -80,6 +84,9 @@ For more informaiton, please refer to [EDSR(PyTorch)](https://github.com/thstkdg
     python main.py --data_test MyImage --scale 4 --model RCAN --n_resgroups 10 --n_resblocks 20 --n_feats 64 --pre_train ../model/RCAN_BIX4.pt --test_only --save_results --chop --save 'RCAN' --testpath /media/yulun/Disk10T/datasets/super-resolution/LRBI --testset Set5
     # RCAN_BIX8
     python main.py --data_test MyImage --scale 8 --model RCAN --n_resgroups 10 --n_resblocks 20 --n_feats 64 --pre_train ../model/RCAN_BIX8.pt --test_only --save_results --chop --save 'RCAN' --testpath /media/yulun/Disk10T/datasets/super-resolution/LRBI --testset Set5
+    # BD degradation model, X3
+    # RCAN_BDX3
+    python main.py --data_test MyImage --scale 3 --model RCAN --n_resgroups 10 --n_resblocks 20 --n_feats 64 --pre_train ../model/RCAN_BDX3.pt --test_only --save_results --chop --save 'RCAN' --testpath /media/yulun/Disk10T/datasets/super-resolution/LRBD --degradation BD --testset Set5
     # With self-ensemble: RCAN+
     # RCANplus_BIX2
     python main.py --data_test MyImage --scale 2 --model RCAN --n_resgroups 10 --n_resblocks 20 --n_feats 64 --pre_train ../model/RCAN_BIX2.pt --test_only --save_results --chop --self_ensemble --save 'RCANplus' --testpath /media/yulun/Disk10T/datasets/super-resolution/LRBI --testset Set5
@@ -89,6 +96,9 @@ For more informaiton, please refer to [EDSR(PyTorch)](https://github.com/thstkdg
     python main.py --data_test MyImage --scale 4 --model RCAN --n_resgroups 10 --n_resblocks 20 --n_feats 64 --pre_train ../model/RCAN_BIX4.pt --test_only --save_results --chop --self_ensemble --save 'RCANplus' --testpath /media/yulun/Disk10T/datasets/super-resolution/LRBI --testset Set5
     # RCANplus_BIX8
     python main.py --data_test MyImage --scale 8 --model RCAN --n_resgroups 10 --n_resblocks 20 --n_feats 64 --pre_train ../model/RCAN_BIX8.pt --test_only --save_results --chop --self_ensemble --save 'RCANplus' --testpath /media/yulun/Disk10T/datasets/super-resolution/LRBI --testset Set5
+    # BD degradation model, X3
+    # RCANplus_BDX3
+    python main.py --data_test MyImage --scale 3 --model RCAN --n_resgroups 10 --n_resblocks 20 --n_feats 64 --pre_train ../model/RCAN_BDX3.pt --test_only --save_results --chop --self_ensemble  --save 'RCANplus' --testpath /media/yulun/Disk10T/datasets/super-resolution/LRBD --degradation BD --testset Set5
     ```
 
 ### The whole test pipeline
