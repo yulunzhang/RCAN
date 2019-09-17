@@ -3,7 +3,9 @@ import os
 from data import common
 
 import numpy as np
-import scipy.misc as misc
+# import scipy.misc as misc
+# misc.imread or misc.imsave are not available in the newer version of scipy. Instead, try to use imageio
+import imageio
 
 import torch
 import torch.utils.data as data
@@ -26,7 +28,8 @@ class Demo(data.Dataset):
     def __getitem__(self, idx):
         filename = os.path.split(self.filelist[idx])[-1]
         filename, _ = os.path.splitext(filename)
-        lr = misc.imread(self.filelist[idx])
+        #lr = misc.imread(self.filelist[idx])
+        lr = imageio.imread(self.filelist[idx])
         lr = common.set_channel([lr], self.args.n_colors)[0]
 
         return common.np2Tensor([lr], self.args.rgb_range)[0], -1, filename
