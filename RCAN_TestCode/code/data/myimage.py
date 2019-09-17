@@ -7,7 +7,8 @@ import errno
 from data import common
 
 import numpy as np
-import scipy.misc as misc
+# import scipy.misc as misc
+import imageio
 
 import torch
 import torch.utils.data as data
@@ -28,7 +29,8 @@ class MyImage(data.Dataset):
             for f in os.listdir(apath):
                 try:
                     filename = os.path.join(apath, f)
-                    misc.imread(filename)
+                    #misc.imread(filename)
+                    imageio.imread(filename)
                     self.filelist.append(filename)
                     self.imnamelist.append(f)
                 except:
@@ -37,7 +39,8 @@ class MyImage(data.Dataset):
     def __getitem__(self, idx):
         filename = os.path.split(self.filelist[idx])[-1]
         filename, _ = os.path.splitext(filename)
-        lr = misc.imread(self.filelist[idx])
+        #lr = misc.imread(self.filelist[idx])
+        lr = imageio.imread(self.filelist[idx])
         lr = common.set_channel([lr], self.args.n_colors)[0]
 
         return common.np2Tensor([lr], self.args.rgb_range)[0], -1, filename
