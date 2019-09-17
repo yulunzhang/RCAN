@@ -9,7 +9,8 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 import numpy as np
-import scipy.misc as misc
+# import scipy.misc as misc
+import imageio
 
 import torch
 import torch.optim as optim
@@ -124,7 +125,8 @@ class checkpoint():
         for v, p in zip(save_list, postfix):
             normalized = v[0].data.mul(255 / self.args.rgb_range)
             ndarr = normalized.byte().permute(1, 2, 0).cpu().numpy()
-            misc.imsave('{}{}.png'.format(filename, p), ndarr)
+            #misc.imsave('{}{}.png'.format(filename, p), ndarr)
+            imageio.imsave('{}{}.png'.format(filename, p), ndarr)
 
     def save_results_nopostfix(self, filename, save_list, scale):
         #print(filename)
@@ -138,7 +140,8 @@ class checkpoint():
         for v, p in zip(save_list, postfix):
             normalized = v[0].data.mul(255 / self.args.rgb_range)
             ndarr = normalized.byte().permute(1, 2, 0).cpu().numpy()
-            misc.imsave('{}.png'.format(filename), ndarr)
+            #misc.imsave('{}.png'.format(filename), ndarr)
+            imageio.imsave('{}.png'.format(filename), ndarr)
 
 
 def quantize(img, rgb_range):
