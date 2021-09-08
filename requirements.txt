@@ -11,7 +11,7 @@ mkl==2019.0
 mkl-include==2019.0
 networkx==2.4
 numpy==1.18.5
-Pillow==7.2.0
+Pillow==8.3.2
 pycparser==2.20
 pyparsing==2.4.7
 python-dateutil==2.8.1
