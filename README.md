@@ -7,7 +7,7 @@ This repository is for RCAN introduced in the following paper
 The code is built on [EDSR (PyTorch)](https://github.com/thstkdgus35/EDSR-PyTorch) and tested on Ubuntu 14.04/16.04 environment (Python3.6, PyTorch_0.4.0, CUDA8.0, cuDNN5.1) with Titan X/1080Ti/Xp GPUs. RCAN model has also been merged into [EDSR (PyTorch)](https://github.com/thstkdgus35/EDSR-PyTorch).
 
 **Visual results** reproducing the PSNR/SSIM values in the paper are availble at GoogleDrive. 
-For BI degradation model, scales=2,3,4,8: [Results_ECCV2018RCAN_BIX2X3X4X8](https://drive.google.com/file/d/1q10aGPlAybODPqx9ncom_35eeBh98iBp/view?usp=sharing)
+For BI degradation model, scales=2,3,4,8: [Results_ECCV2018RCAN_BIX2X3X4X8](https://drive.google.com/file/d/1bAhE7QM-1bmlt0nIz7BsZ0jTeGVAOmXN/view?usp=sharing)
 
 ## Contents
 1. [Introduction](#introduction)
