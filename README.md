@@ -40,7 +40,7 @@ For more informaiton, please refer to [EDSR(PyTorch)](https://github.com/thstkdg
 
 1. (optional) Download models for our paper and place them in '/RCAN_TrainCode/experiment/model'.
 
-    All the models (BIX2/3/4/8, BDX3) can be downloaded from [Dropbox](https://www.dropbox.com/s/qm9vc0p0w9i4s0n/models_ECCV2018RCAN.zip?dl=0), [BaiduYun](https://pan.baidu.com/s/1bkoJKmdOcvLhOFXHVkFlKA), or [GoogleDrive](https://drive.google.com/file/d/10bEK-NxVtOS9-XSeyOZyaRmxUTX3iIRa/view?usp=sharing).
+    All the models (BIX2/3/4/8, BDX3) can be downloaded from [Dropbox](https://www.dropbox.com/s/qm9vc0p0w9i4s0n/models_ECCV2018RCAN.zip?dl=0), [BaiduYun](https://pan.baidu.com/s/1bkoJKmdOcvLhOFXHVkFlKA), or [GoogleDrive](https://drive.google.com/file/d/1U0RmWkkacyw0HNC7CBts2LcX1ewAulCn/view?usp=sharing).
 
 2. Cd to 'RCAN_TrainCode/code', run the following scripts to train models.
 
@@ -70,7 +70,7 @@ For more informaiton, please refer to [EDSR(PyTorch)](https://github.com/thstkdg
 ### Quick start
 1. Download models for our paper and place them in '/RCAN_TestCode/model'.
 
-    All the models (BIX2/3/4/8, BDX3) can be downloaded from [Dropbox](https://www.dropbox.com/s/qm9vc0p0w9i4s0n/models_ECCV2018RCAN.zip?dl=0), [BaiduYun](https://pan.baidu.com/s/1bkoJKmdOcvLhOFXHVkFlKA), or [GoogleDrive](https://drive.google.com/file/d/10bEK-NxVtOS9-XSeyOZyaRmxUTX3iIRa/view?usp=sharing).
+    All the models (BIX2/3/4/8, BDX3) can be downloaded from [Dropbox](https://www.dropbox.com/s/qm9vc0p0w9i4s0n/models_ECCV2018RCAN.zip?dl=0), [BaiduYun](https://pan.baidu.com/s/1bkoJKmdOcvLhOFXHVkFlKA), or [GoogleDrive](https://drive.google.com/file/d/1U0RmWkkacyw0HNC7CBts2LcX1ewAulCn/view?usp=sharing).
 
 2. Cd to '/RCAN_TestCode/code', run the following scripts.
 
